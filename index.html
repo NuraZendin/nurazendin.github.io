@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Streamee – YouTube-Streamkey für ATEM</title>
+<meta name="description" content="Streamee: Einmal mit YouTube verbinden, Sendung anlegen, Schlüssel an den Blackmagic ATEM senden. Tally und Switching inklusive.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root{--bg:#09090a;--panel:#161618;--panel2:#212124;--line:rgba(255,255,255,.08);--tally:#ed3338;--signal:#3ddb7a;--amber:#ffb021;--dim:rgba(255,255,255,.55)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:#f5f5f7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 20px 60px}
+  header{display:flex;align-items:center;gap:16px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+  header img{width:64px;height:64px;border-radius:15px}
+  .wordmark{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;font-size:40px;letter-spacing:.5px;text-transform:uppercase}
+  .wordmark span{color:var(--tally)}
+  .tag{margin-left:auto;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--dim)}
+  .led{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--tally);box-shadow:0 0 10px var(--tally);margin-right:8px;vertical-align:middle}
+  h1{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:44px;line-height:1.05;margin:40px 0 8px}
+  .bar{width:64px;height:4px;background:var(--tally);margin:18px 0}
+  p.lead{color:var(--dim);font-size:18px;max-width:600px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:36px 0}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:22px;position:relative}
+  .panel:before,.panel:after{content:"";position:absolute;width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.1)}
+  .panel:before{top:7px;left:7px}.panel:after{bottom:7px;right:7px}
+  .panel h3{margin:0 0 8px;font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:22px}
+  .panel .num{font-size:12px;letter-spacing:2px;color:var(--dim)}
+  .panel.s .num{color:var(--tally)}.panel.t .num{color:var(--signal)}.panel.w .num{color:var(--amber)}
+  .panel p{margin:0;color:var(--dim);font-size:15px}
+  .btn{display:inline-block;background:var(--tally);color:#fff;text-decoration:none;font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;letter-spacing:1px;padding:14px 22px;border-radius:6px;box-shadow:0 3px 0 rgba(0,0,0,.5)}
+  section.about{margin-top:56px;padding-top:24px;border-top:1px solid var(--line)}
+  section.about h2{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:26px;margin:28px 0 8px}
+  section.about p{color:var(--dim);font-size:15px;margin:0 0 6px}
+  a{color:#fff}
+  footer{margin-top:40px;color:var(--dim);font-size:13px}
+  nav{margin:32px 0 0}
+  nav a{color:var(--dim);text-decoration:none;margin-right:16px;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="Streamee App-Icon">
+    <div class="wordmark">Strea<span>mee</span></div>
+    <div class="tag"><span class="led"></span>Broadcast Tools</div>
+  </header>
+
+  <h1>Stream-Schlüssel<br>auf Knopfdruck</h1>
+  <div class="bar"></div>
+  <p class="lead">Streamee macht das Livestreamen vom Blackmagic ATEM auf YouTube zum Ein-Knopf-Job: einmal mit YouTube verbinden, Sendung anlegen, Schlüssel an den ATEM senden. Dazu Tally-Light und Switching auf iPhone und iPad.</p>
+  <p><a class="btn" href="#">Im App Store laden</a></p>
+
+  <div class="grid">
+    <div class="panel s"><div class="num">01</div><h3>Stream</h3><p>Dauerhafter Stream-Schlüssel, Sendung mit Titel, Sichtbarkeit und Zuschauer-Link. URL und Schlüssel per Knopfdruck in den ATEM.</p></div>
+    <div class="panel t"><div class="num">02</div><h3>Tally</h3><p>Programm rot, Preview grün – mit Ton und Vibration, auch bei gesperrtem Display in der Tasche.</p></div>
+    <div class="panel w"><div class="num">03</div><h3>Switching</h3><p>Programm, Preview, Cut/Auto, Mix/Dip/Wipe/DVE, Bild-im-Bild und Aufnahme – direkt vom iPhone.</p></div>
+  </div>
+
+  <section class="about">
+    <h2>Wie Streamee mit YouTube arbeitet</h2>
+    <p>Streamee verbindet sich auf deinen Wunsch einmalig über Google-Anmeldung (OAuth 2.0) mit deinem YouTube-Konto. Die App liest deinen dauerhaften Stream-Schlüssel aus, legt auf Wunsch neue Livestream-Sendungen an und übergibt Server-URL und Schlüssel direkt an deinen Blackmagic ATEM im lokalen Netzwerk.</p>
+    <p>Das Zugriffstoken bleibt im geschützten Schlüsselbund deines Geräts. Streamee betreibt keinen eigenen Server, überträgt nichts an Dritte und enthält weder Werbung noch Tracking. Alle Einzelheiten stehen in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  </section>
+
+  <nav><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a><a href="mailto:neroud@icloud.com">Support</a></nav>
+
+  <footer>© 2026 Luma Media · Streamee</footer>
+</div>
+</body>
+</html>
