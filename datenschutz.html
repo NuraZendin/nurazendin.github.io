@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Datenschutzerklärung – Streamee</title>
-<meta name="description" content="Datenschutzerklärung der App Streamee: welche Daten verarbeitet werden, wo sie gespeichert sind und wie du den Zugriff widerrufst.">
+<meta name="description" content="Datenschutzerklärung der App Streamee: welche Google-Nutzerdaten die App abruft, wofür sie verwendet werden, wie sie geschützt sind und wie du den Zugriff widerrufst.">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
@@ -21,9 +21,19 @@
   .led{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--tally);box-shadow:0 0 10px var(--tally);margin-right:8px;vertical-align:middle}
   h1{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:44px;line-height:1.05;margin:40px 0 8px}
   .bar{width:64px;height:4px;background:var(--tally);margin:18px 0}
-  section.legal h2{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:26px;margin:28px 0 8px}
-  section.legal h4{margin:18px 0 4px;font-size:15px}
-  section.legal p{color:var(--dim);font-size:15px;margin:0 0 6px}
+  .langbar{margin:0 0 26px;font-size:13px;color:var(--dim)}
+  .langbar a{color:#fff}
+  section.legal h2{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:26px;margin:34px 0 10px;padding-top:10px;border-top:1px solid var(--line)}
+  section.legal h4{margin:20px 0 4px;font-size:15px}
+  section.legal p{color:var(--dim);font-size:15px;margin:0 0 8px}
+  section.legal ul{color:var(--dim);font-size:15px;margin:0 0 10px;padding-left:20px}
+  section.legal li{margin-bottom:6px}
+  section.legal li b{color:#f5f5f7;font-weight:600}
+  code{background:var(--panel2);padding:1px 6px;border-radius:4px;font-size:13px;color:#f5f5f7;word-break:break-all}
+  .tablewrap{overflow-x:auto;margin:0 0 12px}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+  th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line);color:var(--dim)}
+  th{color:#f5f5f7;font-weight:600;white-space:nowrap}
   a{color:#fff}
   footer{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
   nav{margin:32px 0 0}
@@ -38,27 +48,154 @@
     <div class="tag"><span class="led"></span>Broadcast Tools</div>
   </header>
 
-  <h1>Datenschutz&shy;erklärung</h1>
+  <h1 id="de">Datenschutz&shy;erklärung</h1>
   <div class="bar"></div>
+  <p class="langbar">Deutsch · <a href="#en">English version below</a></p>
 
   <section class="legal">
-    <p>Stand: 07.09.2026</p>
+    <p>Stand: 10. September 2026</p>
+
     <h4>Verantwortlicher</h4>
-    <p>Luma Media, Neroud Suleiman, Fuhrenkamp 26, 21629 Neu Wulmstorf, neroud@icloud.com</p>
-    <h4>Welche Daten verarbeitet Streamee?</h4>
-    <p>Streamee verbindet sich in deinem Auftrag mit deinem YouTube-Konto, um Stream-Schlüssel und Livestream-Sendungen anzulegen, anzuzeigen und zu beenden. Dazu erhält die App nach deiner Zustimmung ein Zugriffstoken von Google (OAuth 2.0).</p>
-    <h4>Wo werden Daten gespeichert?</h4>
-    <p>Das Zugriffstoken wird ausschließlich im geschützten Schlüsselbund (Keychain) deines Geräts gespeichert. Die zuletzt geladene Liste deiner Stream-Schlüssel und die IP-Adresse deines ATEM werden lokal auf dem Gerät gespeichert. Streamee betreibt keinen eigenen Server. Es werden keine Daten an den Anbieter oder Dritte übertragen.</p>
-    <h4>Welche Dienste werden kontaktiert?</h4>
-    <p>Google / YouTube Data API (googleapis.com) zur Verwaltung deiner Livestreams. Es gilt die Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Dein ATEM im lokalen Netzwerk – nur wenn du „Senden an ATEM", Tally oder Switching nutzt.</p>
-    <h4>Nutzung von Google-Nutzerdaten</h4>
-    <p>Streamees Nutzung von Informationen aus Google-APIs entspricht der Google API Services User Data Policy einschließlich der Limited-Use-Anforderungen. Die Daten werden nur genutzt, um die beschriebenen Funktionen bereitzustellen.</p>
-    <h4>Analyse, Werbung, Tracking</h4>
-    <p>Streamee enthält keine Analyse-Tools, keine Werbung und kein Tracking.</p>
-    <h4>Widerruf</h4>
-    <p>Du kannst den Zugriff jederzeit in der App („YouTube-Konto trennen") oder unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> widerrufen. Damit werden alle Token auf dem Gerät gelöscht.</p>
-    <h4>Deine Rechte</h4>
-    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung. Da Streamee keine Daten außerhalb deines Geräts speichert, bestehen beim Anbieter keine personenbezogenen Daten von dir. Fragen: neroud@icloud.com</p>
+    <p>Luma Media, Neroud Suleiman, Fuhrenkamp 26, 21629 Neu Wulmstorf, Deutschland · neroud@icloud.com</p>
+    <p>Diese Erklärung gilt für die iOS- und iPadOS-App <b>Streamee</b> (Bundle-ID <code>de.nurazendin.Streamee</code>). Streamee betreibt keinen eigenen Server. Alle Daten bleiben auf deinem Gerät oder werden direkt zwischen deinem Gerät und Google ausgetauscht.</p>
+
+    <h2>1. Welche Google-Nutzerdaten Streamee abruft</h2>
+    <p>Streamee verbindet sich auf deinen ausdrücklichen Wunsch über Google-Anmeldung (OAuth 2.0) mit deinem YouTube-Konto. Angefordert wird ausschließlich der Bereich <code>https://www.googleapis.com/auth/youtube</code>. Über die YouTube Data API v3 greift die App auf folgende Daten deines Kontos zu:</p>
+    <div class="tablewrap">
+    <table>
+      <tr><th>Daten</th><th>Herkunft</th></tr>
+      <tr><td>Bezeichnung, Kennung und Status deiner dauerhaften Stream-Schlüssel</td><td><code>liveStreams.list</code></td></tr>
+      <tr><td><b>Stream-Schlüssel und Server-URL (RTMP-Ingest-Adresse)</b> deiner Streams</td><td><code>liveStreams.list</code></td></tr>
+      <tr><td>Auflösung und Bildrate der Streams</td><td><code>liveStreams.list</code></td></tr>
+      <tr><td>Titel, Beschreibung, geplante Startzeit, Sichtbarkeit und Status deiner Livestream-Sendungen sowie die Zuordnung Sendung ↔ Schlüssel</td><td><code>liveBroadcasts.list</code></td></tr>
+      <tr><td><b>OAuth-Zugriffstoken und Aktualisierungstoken</b> für dein Konto</td><td>Google-Anmeldung</td></tr>
+    </table>
+    </div>
+    <p>Schreibend legt die App auf deine Anweisung neue Stream-Schlüssel (<code>liveStreams.insert</code>) und Sendungen (<code>liveBroadcasts.insert</code>) an, verknüpft beide (<code>liveBroadcasts.bind</code>), beendet laufende Sendungen (<code>liveBroadcasts.transition</code>) und löscht Schlüssel oder Sendungen, wenn du das auslöst (<code>liveStreams.delete</code>, <code>liveBroadcasts.delete</code>).</p>
+    <p>Streamee ruft <b>keine</b> weiteren Google-Daten ab: keine Videos, keine Kommentare, keine Abonnenten, keine Wiedergabelisten, keine Analysedaten, keine Kontakte, keine E-Mails und keine Profildaten über die YouTube-Kanalzuordnung hinaus.</p>
+
+    <h2>2. Wofür Streamee diese Daten verwendet</h2>
+    <ul>
+      <li><b>Stream-Schlüssel an den Bildmischer übertragen.</b> Der ausgelesene Schlüssel und die Server-URL werden auf Knopfdruck direkt an deinen Blackmagic-ATEM-Bildmischer im lokalen Netzwerk geschickt, damit du sie nicht von Hand aus YouTube Studio abtippen musst. Das ist der Hauptzweck der App.</li>
+      <li><b>Sendungen anlegen und verwalten.</b> Titel, Sichtbarkeit und Startzeit einer neuen Livestream-Sendung setzt du in der App; Streamee legt die Sendung in deinem Konto an und verknüpft sie mit dem gewählten Schlüssel.</li>
+      <li><b>Zustand anzeigen.</b> Die App zeigt dir, welcher Schlüssel gerade Signal bekommt und welche Sendung läuft, damit du vor dem Start siehst, ob alles bereit ist.</li>
+      <li><b>Sendung beenden.</b> Auf deine Anweisung beendet die App eine laufende Sendung.</li>
+      <li><b>Angemeldet bleiben.</b> Das Aktualisierungstoken dient allein dazu, dass du dich nicht bei jedem Start neu anmelden musst.</li>
+    </ul>
+    <p>Die Daten werden ausschließlich für diese Funktionen im laufenden Betrieb der App verwendet. Es findet keine Auswertung, keine Profilbildung, kein Training von KI-Modellen und keine zweckfremde Nutzung statt.</p>
+
+    <h2>3. Wie Streamee diese Daten schützt</h2>
+    <p>Stream-Schlüssel und OAuth-Token sind Zugangsdaten. Wer sie besitzt, kann auf deinen Kanal senden. Streamee behandelt sie entsprechend:</p>
+    <ul>
+      <li><b>Speicherung im Schlüsselbund.</b> Zugriffstoken, Aktualisierungstoken und der Zwischenspeicher der zuletzt geladenen Schlüsselliste liegen ausschließlich im iOS-Schlüsselbund (Keychain). Der Schlüsselbund ist hardwaregestützt verschlüsselt und an dein Gerät gebunden.</li>
+      <li><b>Schutzklasse.</b> Die Einträge sind mit <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code> abgelegt: sie sind erst nach dem ersten Entsperren nach einem Neustart lesbar, verlassen das Gerät nicht, wandern nicht in den iCloud-Schlüsselbund und werden nicht in Backups auf andere Geräte übertragen.</li>
+      <li><b>Verschlüsselte Übertragung.</b> Jede Verbindung zu Google läuft über HTTPS mit TLS. Streamee schaltet keine Ausnahme von Apples App Transport Security für Internetverbindungen frei.</li>
+      <li><b>Kein Server, keine Kopie beim Anbieter.</b> Es gibt keinen Streamee-Server, keine Datenbank und kein Konto beim Anbieter. Der Anbieter kann deine Google-Daten technisch nicht einsehen.</li>
+      <li><b>Getrennte Anmeldung.</b> Die Anmeldung läuft im vom System bereitgestellten Anmeldefenster (<code>ASWebAuthenticationSession</code>) mit PKCE. Die App bekommt dein Google-Passwort zu keinem Zeitpunkt zu sehen und speichert es nicht.</li>
+      <li><b>Keine Weitergabe an Dritte.</b> Es sind keine Analyse-, Werbe- oder Absturzberichts-Bibliotheken eingebunden. Es verlassen keine Daten das Gerät außer den Aufrufen an die YouTube-Schnittstelle und der Übertragung von Server-URL und Schlüssel an deinen ATEM im lokalen Netzwerk.</li>
+      <li><b>Übertragung an den ATEM.</b> Diese Übertragung findet ausschließlich innerhalb deines eigenen Netzwerks statt, an die IP-Adresse, die du selbst einträgst. Sie verlässt dein Netzwerk nicht.</li>
+      <li><b>Nur ein Nutzer.</b> Die App verarbeitet ausschließlich Daten des angemeldeten Kontos. Es gibt keinen Mehrbenutzerbetrieb und keinen fremden Zugriff.</li>
+    </ul>
+
+    <h2>4. Aufbewahrung und Löschung</h2>
+    <ul>
+      <li>Token und zwischengespeicherte Schlüsselliste bleiben so lange auf dem Gerät, bis du den Zugriff widerrufst oder die App löschst.</li>
+      <li>Bei <b>„YouTube-Konto trennen"</b> in der App werden Zugriffstoken, Aktualisierungstoken und der Zwischenspeicher sofort und vollständig vom Gerät gelöscht.</li>
+      <li>Beim Löschen der App entfernt iOS den Sandbox-Bereich der App mitsamt Einstellungen.</li>
+      <li>Der Anbieter bewahrt nichts auf, weil er nie etwas erhält.</li>
+    </ul>
+
+    <h2>5. Google API Services User Data Policy</h2>
+    <p>Streamees Nutzung von Informationen aus Google-APIs unterliegt der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> einschließlich der Limited-Use-Anforderungen. Streamee gibt Google-Nutzerdaten nicht an Dritte weiter, nutzt sie nicht für Werbung und nicht für das Training verallgemeinerter KI-Modelle, und kein Mensch liest sie – ausgenommen die Fälle, die die Richtlinie ausdrücklich erlaubt (deine ausdrückliche Zustimmung, Sicherheitszwecke, gesetzliche Verpflichtung).</p>
+
+    <h2>6. Weitere Daten auf dem Gerät</h2>
+    <p>Unabhängig von Google speichert die App lokal: die IP-Adresse deines ATEM, die IP-Adressen deiner Tally-Leuchten sowie Anzeigeeinstellungen (Ton, Vibration, ausgewählte Kamera). Diese Angaben stammen von dir, bleiben auf dem Gerät und werden nirgendwohin übertragen.</p>
+
+    <h2>7. Analyse, Werbung, Tracking</h2>
+    <p>Streamee enthält keine Analyse-Werkzeuge, keine Werbung, kein Tracking und keine Kennungen zur geräteübergreifenden Wiedererkennung.</p>
+
+    <h2>8. Widerruf</h2>
+    <p>Du kannst den Zugriff jederzeit beenden: in der App über <b>„YouTube-Konto trennen"</b> oder bei Google unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. In beiden Fällen verliert die App den Zugang; die lokal gespeicherten Token und der Zwischenspeicher werden gelöscht.</p>
+
+    <h2>9. Deine Rechte</h2>
+    <p>Dir stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch nach DSGVO zu. Da Streamee keine personenbezogenen Daten außerhalb deines Geräts speichert, liegen beim Anbieter keine Daten über dich vor, auf die sich diese Rechte richten könnten. Für die Daten in deinem Google-Konto wendest du dich an Google. Fragen an: neroud@icloud.com. Es besteht ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde.</p>
+    <p>Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Nutzungsvertrags) beziehungsweise deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die du im Google-Zustimmungsbildschirm erteilst.</p>
+    <p>Für die Verarbeitung in deinem Google-Konto gilt die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
+  </section>
+
+  <h1 id="en">Privacy Policy</h1>
+  <div class="bar"></div>
+  <p class="langbar">English · <a href="#de">Deutsche Fassung oben</a></p>
+
+  <section class="legal">
+    <p>Last updated: 10 September 2026</p>
+
+    <h4>Data controller</h4>
+    <p>Luma Media, Neroud Suleiman, Fuhrenkamp 26, 21629 Neu Wulmstorf, Germany · neroud@icloud.com</p>
+    <p>This policy covers the iOS and iPadOS app <b>Streamee</b> (bundle ID <code>de.nurazendin.Streamee</code>). Streamee operates no server of its own. All data stays on your device or is exchanged directly between your device and Google.</p>
+
+    <h2>1. Which Google user data Streamee accesses</h2>
+    <p>At your explicit request, Streamee connects to your YouTube account using Google Sign-In (OAuth 2.0). The only scope requested is <code>https://www.googleapis.com/auth/youtube</code>. Through the YouTube Data API v3 the app accesses the following data from your account:</p>
+    <div class="tablewrap">
+    <table>
+      <tr><th>Data</th><th>Source</th></tr>
+      <tr><td>Title, ID and status of your persistent stream keys</td><td><code>liveStreams.list</code></td></tr>
+      <tr><td><b>Stream key and server URL (RTMP ingestion address)</b> of your streams</td><td><code>liveStreams.list</code></td></tr>
+      <tr><td>Resolution and frame rate of your streams</td><td><code>liveStreams.list</code></td></tr>
+      <tr><td>Title, description, scheduled start time, visibility and status of your live broadcasts, and the broadcast-to-stream binding</td><td><code>liveBroadcasts.list</code></td></tr>
+      <tr><td><b>OAuth access token and refresh token</b> for your account</td><td>Google Sign-In</td></tr>
+    </table>
+    </div>
+    <p>On your instruction the app also writes: it creates stream keys (<code>liveStreams.insert</code>) and broadcasts (<code>liveBroadcasts.insert</code>), binds the two (<code>liveBroadcasts.bind</code>), ends a running broadcast (<code>liveBroadcasts.transition</code>) and deletes keys or broadcasts when you ask it to (<code>liveStreams.delete</code>, <code>liveBroadcasts.delete</code>).</p>
+    <p>Streamee accesses <b>no</b> other Google data: no videos, comments, subscribers, playlists or analytics, no contacts, no email, and no profile information beyond the YouTube channel the key belongs to.</p>
+
+    <h2>2. How Streamee uses this data</h2>
+    <ul>
+      <li><b>Sending the stream key to the video switcher.</b> The key and server URL that were read from your account are sent, at the press of a button, to your Blackmagic ATEM switcher on your local network, so you do not have to copy them by hand from YouTube Studio. This is the app's core purpose.</li>
+      <li><b>Creating and managing broadcasts.</b> You set title, visibility and start time in the app; Streamee creates the broadcast in your account and binds it to the selected key.</li>
+      <li><b>Showing status.</b> The app shows which key is currently receiving signal and which broadcast is live, so you can see before going on air whether everything is ready.</li>
+      <li><b>Ending a broadcast.</b> On your instruction the app ends a running broadcast.</li>
+      <li><b>Staying signed in.</b> The refresh token exists solely so you do not have to sign in again every time you open the app.</li>
+    </ul>
+    <p>The data is used exclusively to provide these features while you use the app. There is no analysis, no profiling, no training of AI models and no use for any unrelated purpose.</p>
+
+    <h2>3. How Streamee protects this data</h2>
+    <p>Stream keys and OAuth tokens are credentials: anyone holding them can broadcast to your channel. Streamee treats them accordingly:</p>
+    <ul>
+      <li><b>Keychain storage.</b> The access token, the refresh token and the cache of the most recently loaded key list are stored exclusively in the iOS Keychain, which is hardware-backed encrypted storage tied to your device.</li>
+      <li><b>Protection class.</b> These items are stored with <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code>: readable only after the first unlock following a restart, never leaving the device, never synced to iCloud Keychain and never restored to a different device from a backup.</li>
+      <li><b>Encrypted transport.</b> Every connection to Google uses HTTPS with TLS. Streamee grants no App Transport Security exception for internet connections.</li>
+      <li><b>No server, no copy held by the developer.</b> There is no Streamee server, no database and no developer-side account. The developer has no technical means of seeing your Google data.</li>
+      <li><b>Isolated sign-in.</b> Sign-in runs in the system-provided authentication session (<code>ASWebAuthenticationSession</code>) using PKCE. The app never sees and never stores your Google password.</li>
+      <li><b>No sharing with third parties.</b> No analytics, advertising or crash-reporting libraries are included. No data leaves the device other than the calls to the YouTube API and the transfer of server URL and key to your ATEM on your local network.</li>
+      <li><b>Transfer to the ATEM.</b> That transfer happens entirely inside your own network, to the IP address you enter yourself. It never leaves your network.</li>
+      <li><b>Single user.</b> The app only ever processes data belonging to the signed-in account. There is no multi-user mode and no third-party access.</li>
+    </ul>
+
+    <h2>4. Retention and deletion</h2>
+    <ul>
+      <li>Tokens and the cached key list remain on the device until you revoke access or delete the app.</li>
+      <li>Choosing <b>"Disconnect YouTube account"</b> in the app deletes the access token, the refresh token and the cache from the device immediately and completely.</li>
+      <li>Deleting the app causes iOS to remove the app's sandbox together with its settings.</li>
+      <li>The developer retains nothing, because the developer never receives anything.</li>
+    </ul>
+
+    <h2>5. Google API Services User Data Policy</h2>
+    <p>Streamee's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Streamee does not transfer Google user data to third parties, does not use it for advertising, does not use it to train generalised AI models, and no human reads it — except for the cases the policy expressly permits (your explicit consent, security purposes, or legal obligation).</p>
+
+    <h2>6. Other data stored on the device</h2>
+    <p>Independently of Google, the app stores locally: the IP address of your ATEM, the IP addresses of your tally lights, and display settings (sound, vibration, selected camera). You supply this information yourself, it stays on the device and it is never transmitted anywhere.</p>
+
+    <h2>7. Analytics, advertising, tracking</h2>
+    <p>Streamee contains no analytics tools, no advertising, no tracking and no identifiers used to recognise you across apps or devices.</p>
+
+    <h2>8. Revoking access</h2>
+    <p>You can end access at any time: in the app via <b>"Disconnect YouTube account"</b>, or at Google under <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Either way the app loses access, and the locally stored tokens and cache are deleted.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Under the GDPR you have the right to access, rectification, erasure, restriction of processing, data portability and objection. Because Streamee stores no personal data outside your own device, the developer holds no data about you for those rights to apply to. For data held in your Google account, contact Google. Questions: neroud@icloud.com. You also have the right to lodge a complaint with a data protection supervisory authority.</p>
+    <p>The legal basis for processing is Art. 6(1)(b) GDPR (performance of the user agreement) and your consent under Art. 6(1)(a) GDPR, which you give on the Google consent screen.</p>
+    <p>Processing inside your Google account is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
   </section>
 
   <nav><a href="index.html">Startseite</a><a href="impressum.html">Impressum</a><a href="mailto:neroud@icloud.com">Support</a></nav>
