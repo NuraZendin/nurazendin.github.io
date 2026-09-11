@@ -1,0 +1,11 @@
+{
+  "aktuell": "1.10",
+  "versionen": [
+    {
+      "version": "1.10",
+      "datum": "2026-09-11",
+      "manifest": "firmware/1.10/manifest.json",
+      "hinweis": "Einstellungen lassen sich über das USB-Kabel setzen. Feste Adresse, Ruf mit drei blauen Blitzen."
+    }
+  ]
+}
